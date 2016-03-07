@@ -63,6 +63,9 @@
 <template name="website_item">
 <li>
 	<a href="{{url}}">{{title}}</a>
+    {{#if votes}}
+        <span>votes: {{votes}}</span>
+    {{/if}}
 	<p>
 		{{description}}
 	</p>
